@@ -13,7 +13,10 @@ input("Press the <ENTER> key to continue...")
 
 # 2. Plotting data
 print("Plotting Data ...\n")
-x,y = np.loadtxt("ex1data1.txt", delimiter=',', unpack=True)
+data = np.loadtxt("ex1data1.txt", delimiter=',')
+
+x = data[:,0,None]
+y = data[:,1,None]
 
 m = len(y)
 plt.scatter(x,y, marker='x', color='r')
@@ -23,8 +26,6 @@ plt.show()
 input("Press the <ENTER> key to continue...")
 
 # 3. Cost and Gradient Descent
-# print(len(np.ones(m)))
-# print(len(x))
 print("\nTesting the cost function ...\n")
 X = np.column_stack([np.ones(m), x])
 theta = np.zeros((2,1))
