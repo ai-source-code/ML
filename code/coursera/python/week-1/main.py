@@ -57,7 +57,7 @@ print("Expected theta values (approx)\n");
 print(" -3.6303\n 1.1664\n\n");
 
 plt.plot(X[:,1, None], np.dot(X, theta),'-', label='Linear regression')
-plt.legend(loc='upper right')
+plt.legend(loc='lower right')
 plt.xticks([5, 10, 15, 20, 25])
 plt.yticks([-5, 0, 5, 10, 15, 20, 25])
 plt.show()

@@ -3,5 +3,5 @@ __pycache__/
 .DS_Store
 
 # Notebook Checkpoints
-.ipynb
+*.ipynb
 .ipynb_checkpoints
