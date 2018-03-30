@@ -24,7 +24,7 @@ m = len(y)
 # Normalize Features
 X = normalize_feature(X)
 
-plot_multiple_features(X, y)
+# plot_multiple_features(X, y)
 
 # Add X0 as 1
 X = np.column_stack([np.ones(m), X])
