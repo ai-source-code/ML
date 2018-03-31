@@ -1,5 +1,6 @@
 import os
 import numpy as np
+import pandas as pd
 from gradientDescent import gradient_descent
 from featureNormalization import normalize_feature
 from predict import predict
@@ -10,10 +11,12 @@ os.system("clear")
 
 # Load data from excel sheet
 # data = np.loadtxt(open('winequality-red.csv', 'rt'), delimiter=",", skiprows=1)
-data = np.loadtxt("winequality-red.csv", delimiter=',', skiprows=1)
+# data = np.loadtxt("winequality-red.csv", delimiter=',', skiprows=1)
+data = pd.read_csv("winequality-red.csv")
+X = data.iloc[:, :-1].values
+y = data.iloc[:, -1].values
 
-X = data[:, :-1]
-y = data[:, -1, None]
+y = y.reshape(y.shape[0], 1)
 
 # Gradient settings
 alpha = 0.01
@@ -24,7 +27,6 @@ m = len(y)
 # Normalize Features
 X = normalize_feature(X)
 
-# plot_multiple_features(X, y)
 
 # Add X0 as 1
 X = np.column_stack([np.ones(m), X])

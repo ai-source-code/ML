@@ -5,8 +5,8 @@ from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 
 df = pd.read_csv('winequality-red.csv', header=None, skiprows=1)
-X = df.iloc[:, :-1]
-y = df.iloc[:,-1]
+X = df.iloc[:, :-1].values
+y = df.iloc[:,-1].values
 
 regr = linear_model.LinearRegression()
 
