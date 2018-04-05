@@ -9,3 +9,5 @@ http://aclweb.org/anthology/D/D15/D15-1181.pdf
 https://github.com/castorini/MP-CNN-Torch
 https://hohocode.github.io/textSimilarityConvNet/
 https://github.com/hohoCode/textSimilarityConvNet
+
+NLP - https://web.stanford.edu/class/cs224n/syllabus.html

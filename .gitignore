@@ -5,3 +5,4 @@ __pycache__/
 # Notebook Checkpoints
 *.ipynb
 .ipynb_checkpoints
+code/kaggle/reviews/Reviews.csv
