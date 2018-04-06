@@ -11,3 +11,7 @@ https://hohocode.github.io/textSimilarityConvNet/
 https://github.com/hohoCode/textSimilarityConvNet
 
 NLP - https://web.stanford.edu/class/cs224n/syllabus.html
+
+Completed Kaggle Competitions:
+1) House Sales in King County, USA -
+https://www.kaggle.com/harlfoxem/housesalesprediction/data
