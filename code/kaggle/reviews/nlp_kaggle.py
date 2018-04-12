@@ -35,6 +35,6 @@ for index in range(len(data_set_review)):
     corpus.append(review)
     
 
- word_counter = Counter(data_set_review.split())
- print(word_counter)
+word_counter = Counter(data_set_review.split())
+print(word_counter)
 # print(len(corpus))
