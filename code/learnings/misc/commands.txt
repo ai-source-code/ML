@@ -1,0 +1,26 @@
+Count the Null Columns:
+training_data_set = pd.read_csv("train.csv")
+null_columns=training_data_set.columns[training_data_set.isnull().any()]
+training_data_set[null_columns].isnull().sum()
+
+training_data_set.isnull().values.any()
+training_data_set.isnull().sum()
+
+To find out which rows have NaNs in a specific column:
+
+nan_rows = training_data_set[training_data_set['name column'].isnull()]
+
+training_data_set['Age'] = training_data_set['Age'].fillna(0)
+training_data_set['Embarked'] = training_data_set['Embarked'].fillna('S')
+
+training_data_set['Age'].fillna(training_data_set['Age'].median(), inplace = True)
+
+#complete embarked with mode
+training_data_set['Embarked'].fillna(training_data_set['Embarked'].mode()[0], inplace = True)
+
+#complete missing fare with median
+dataset['Fare'].fillna(dataset['Fare'].median(), inplace = True)
+
+training_data_set.Embarked.dropna().mode()[0]
+
+Mode = Most Common Value

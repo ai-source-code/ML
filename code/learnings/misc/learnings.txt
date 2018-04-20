@@ -1,2 +1,4 @@
 =IF(D1>0.97, "1", "0")
 =IF(VALUE(E1) = VALUE(F1), "True", "False")
+
+https://www.kaggle.com/startupsci/titanic-data-science-solutions
