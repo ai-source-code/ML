@@ -1,4 +1,7 @@
 =IF(D1>0.97, "1", "0")
 =IF(VALUE(E1) = VALUE(F1), "True", "False")
 
+To count number of matches  between two columns
+=SUMPRODUCT(--(E2:E101=F2:F101))
+
 https://www.kaggle.com/startupsci/titanic-data-science-solutions
