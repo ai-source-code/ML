@@ -7,3 +7,5 @@ __pycache__/
 .ipynb_checkpoints
 code/kaggle/reviews/Reviews.csv
 code/kaggle/quora-duplicate-questions/train.csv
+code/misc/twitter-sentiment-analysis/data/
+/code/udemy/machine-learning -A-Z/Part 8 - Deep Learning/Section 40 - Convolutional_Neural_Networks(CNN)/dataset/
